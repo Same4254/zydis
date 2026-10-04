@@ -285,10 +285,6 @@ typedef enum ZydisRegister_
     ZYDIS_REGISTER_EFLAGS,
     ZYDIS_REGISTER_RFLAGS,
 
-    ZYDIS_REGISTER_CF,
-    ZYDIS_REGISTER_ZF,
-    ZYDIS_REGISTER_OF,
-    ZYDIS_REGISTER_SF,
     // Instruction-pointer registers
     ZYDIS_REGISTER_IP,
     ZYDIS_REGISTER_EIP,
@@ -379,10 +375,15 @@ typedef enum ZydisRegister_
     ZYDIS_REGISTER_UIF,
     ZYDIS_REGISTER_IA32_KERNEL_GS_BASE,
 
+    ZYDIS_REGISTER_CF,
+    ZYDIS_REGISTER_ZF,
+    ZYDIS_REGISTER_OF,
+    ZYDIS_REGISTER_SF,
+
     /**
      * Maximum value of this enum.
      */
-    ZYDIS_REGISTER_MAX_VALUE = ZYDIS_REGISTER_IA32_KERNEL_GS_BASE,
+    ZYDIS_REGISTER_MAX_VALUE = ZYDIS_REGISTER_SF,
     /**
      * The minimum number of bits required to represent all values of this enum.
      */
