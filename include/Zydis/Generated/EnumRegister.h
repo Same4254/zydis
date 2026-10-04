@@ -383,7 +383,7 @@ typedef enum ZydisRegister_
     /**
      * Maximum value of this enum.
      */
-    ZYDIS_REGISTER_MAX_VALUE = ZYDIS_REGISTER_SF,
+    ZYDIS_REGISTER_MAX_VALUE,
     /**
      * The minimum number of bits required to represent all values of this enum.
      */
