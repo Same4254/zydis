@@ -285,6 +285,10 @@ typedef enum ZydisRegister_
     ZYDIS_REGISTER_EFLAGS,
     ZYDIS_REGISTER_RFLAGS,
 
+    ZYDIS_REGISTER_CF,
+    ZYDIS_REGISTER_ZF,
+    ZYDIS_REGISTER_OF,
+    ZYDIS_REGISTER_SF,
     // Instruction-pointer registers
     ZYDIS_REGISTER_IP,
     ZYDIS_REGISTER_EIP,
